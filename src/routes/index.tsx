@@ -17,7 +17,7 @@ function HomePage() {
       <h1
         className={`text-5xl font-bold tracking-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] transition-colors duration-500 sm:text-6xl ${theme.heading}`}
       >
-        hi
+        hmmmmm
       </h1>
     </div>
   );
