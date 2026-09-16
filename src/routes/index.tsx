@@ -6,8 +6,8 @@ export const Route = createFileRoute('/')({
 
 function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-950 px-6">
-      <h1 className="text-5xl font-bold tracking-tight text-slate-100 sm:text-6xl">
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-red-950 via-red-900 to-red-950 px-6">
+      <h1 className="text-5xl font-bold tracking-tight text-red-50 drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] sm:text-6xl">
         Hello World
       </h1>
     </div>
