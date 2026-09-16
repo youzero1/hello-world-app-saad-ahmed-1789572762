@@ -13,7 +13,7 @@ function RootLayout() {
 
 function NotFound() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-blue-950 text-blue-50">
+    <div className="flex min-h-screen flex-col items-center justify-center gap-4 bg-yellow-400 text-yellow-950">
       <p className="text-lg">This page does not exist.</p>
       <Link to="/" className="text-sm underline underline-offset-4">
         Go to the home page
