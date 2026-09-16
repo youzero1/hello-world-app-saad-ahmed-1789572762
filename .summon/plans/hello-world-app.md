@@ -1,5 +1,5 @@
 ---
-status: pending
+status: implemented
 title: Minimal Hello World App
 ---
 
