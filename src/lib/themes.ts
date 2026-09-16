@@ -1,4 +1,4 @@
-export type ThemeId = 'yellow' | 'red' | 'blue' | 'green' | 'slate';
+export type ThemeId = 'purple' | 'yellow' | 'red' | 'blue' | 'green' | 'slate';
 
 export type Theme = {
   id: ThemeId;
@@ -14,6 +14,14 @@ export type Theme = {
 };
 
 export const THEMES: Theme[] = [
+  {
+    id: 'purple',
+    label: 'Purple',
+    background: 'bg-gradient-to-br from-purple-950 via-purple-800 to-purple-950',
+    heading: 'text-purple-50',
+    swatch: 'bg-purple-500',
+    ring: 'ring-purple-50',
+  },
   {
     id: 'yellow',
     label: 'Yellow',
@@ -56,8 +64,12 @@ export const THEMES: Theme[] = [
   },
 ];
 
-export const DEFAULT_THEME_ID: ThemeId = 'yellow';
+export const DEFAULT_THEME_ID: ThemeId = 'purple';
 
 export function getTheme(id: ThemeId): Theme {
-  return THEMES.find((t) => t.id === id) ?? THEMES[0];
+  return (
+    THEMES.find((t) => t.id === id) ??
+    THEMES.find((t) => t.id === DEFAULT_THEME_ID) ??
+    THEMES[0]
+  );
 }

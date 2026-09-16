@@ -3,7 +3,9 @@ import type { ReactNode } from 'react';
 import { DEFAULT_THEME_ID, getTheme, THEMES } from '@/lib/themes';
 import type { Theme, ThemeId } from '@/lib/themes';
 
-const STORAGE_KEY = 'app-theme';
+// Bumped when the default theme changes so returning visitors see the new default
+// instead of a stale saved preference.
+const STORAGE_KEY = 'app-theme-v2';
 
 type ThemeContextValue = {
   theme: Theme;
